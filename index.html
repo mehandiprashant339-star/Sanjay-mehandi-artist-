@@ -1,1 +1,292 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sanjay Mehandi Artist</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#1b0b08,#4a1d12,#120706);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px 20px;
+    background:
+    linear-gradient(rgba(20,5,2,.65),rgba(20,5,2,.8)),
+    url("IMG-20260925-WA0003.jpg") center/cover;
+}
+
+.card{
+    width:100%;
+    max-width:600px;
+    padding:40px 25px;
+    border-radius:30px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.2);
+    box-shadow:0 20px 50px rgba(0,0,0,.5);
+    transform:perspective(900px) rotateX(2deg);
+}
+
+.logo{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #d9a441;
+    margin-bottom:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.6);
+}
+
+h1{
+    font-size:42px;
+    color:#f5c76b;
+    text-shadow:0 4px 15px #000;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:20px;
+    margin-bottom:25px;
+    color:#fff0cf;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px) scale(1.03);
+}
+
+.call{
+    background:#b87924;
+}
+
+.whatsapp{
+    background:#168c45;
+}
+
+/* GALLERY */
+.gallery-section{
+    padding:60px 15px;
+    text-align:center;
+}
+
+.gallery-section h2{
+    color:#f5c76b;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.gallery-section p{
+    color:#ead7bd;
+    margin-bottom:30px;
+}
+
+.gallery{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:18px;
+}
+
+.gallery img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:20px;
+    border:2px solid rgba(245,199,107,.5);
+    box-shadow:0 12px 25px rgba(0,0,0,.5);
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05) rotateY(5deg);
+}
+
+/* ABOUT */
+.about{
+    max-width:900px;
+    margin:auto;
+    padding:50px 25px;
+    text-align:center;
+}
+
+.about h2{
+    color:#f5c76b;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.about p{
+    line-height:1.8;
+    color:#f1dfc8;
+    font-size:17px;
+}
+
+/* FLOATING BUTTONS */
+.float{
+    position:fixed;
+    right:18px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-decoration:none;
+    font-size:25px;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+
+.float-call{
+    bottom:90px;
+    background:#b87924;
+}
+
+.float-wa{
+    bottom:25px;
+    background:#168c45;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#cdbb9e;
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+@media(max-width:500px){
+    h1{
+        font-size:32px;
+    }
+
+    .subtitle{
+        font-size:17px;
+    }
+
+    .gallery img{
+        height:200px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="card">
+
+<img class="logo"
+src="IMG-20260925-WA0003.jpg"
+alt="Sanjay Mehandi Artist">
+
+<h1>Sanjay Mehandi Artist</h1>
+
+<div class="subtitle">
+Beautiful Mehndi Designs • Bridal Mehndi • All Occasions
+</div>
+
+<div class="buttons">
+<a class="btn call" href="tel:8630549049">
+📞 Call Now
+</a>
+
+<a class="btn whatsapp"
+href="https://wa.me/918630549049"
+target="_blank">
+💬 WhatsApp
+</a>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="gallery-section">
+
+<h2>Our Mehndi Designs</h2>
+
+<p>Beautiful and stylish mehndi designs</p>
+
+<div class="gallery">
+
+<img src="FB_IMG_168329653994.jpg" alt="Mehndi Design">
+<img src="FB_IMG_1694016041592.jpg" alt="Mehndi Design">
+<img src="FB_IMG_1758613883947.jpg" alt="Mehndi Design">
+<img src="IMG-20260404-WA0264.jpg" alt="Mehndi Design">
+<img src="IMG-20260419-WA0008.jpg" alt="Mehndi Design">
+<img src="IMG-20260520-WA0000.jpg" alt="Mehndi Design">
+<img src="IMG-20260522-WA0002.jpg" alt="Mehndi Design">
+<img src="IMG-20260911-WA0004.jpg" alt="Mehndi Design">
+<img src="IMG-20260925-WA0003.jpg" alt="Mehndi Design">
+
+</div>
+
+</section>
+
+
+<section class="about">
+
+<h2>About Sanjay Mehandi Artist</h2>
+
+<p>
+Professional mehndi artist offering beautiful mehndi designs
+for weddings, bridal functions, festivals and special occasions.
+For bookings and enquiries, contact us on Call or WhatsApp.
+</p>
+
+</section>
+
+
+<a class="float float-call" href="tel:8630549049">📞</a>
+
+<a class="float float-wa"
+href="https://wa.me/918630549049"
+target="_blank">💬</a>
+
+
+<footer>
+© 2026 Sanjay Mehandi Artist. All Rights Reserved.
+</footer>
+
+</body>
+</html>
